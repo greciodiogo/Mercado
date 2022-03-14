@@ -1,4 +1,3 @@
-import { red } from "@material-ui/core/colors";
 import { makeStyles, alpha } from "@material-ui/core/styles";
 
 const drawerWidth = 0;
