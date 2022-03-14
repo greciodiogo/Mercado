@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Paper, Steeper, Step, StepLabel, Typography, CircularProgress, Divider, Button, Stepper} from '@material-ui/core'
+import {Paper, Step, StepLabel, Typography, Stepper} from '@material-ui/core'
 import { commerce } from '../../../lib/commerce'
 import useStyles from './styles'
 import AdressForm from '../AdressForm'
@@ -22,7 +22,7 @@ const Checkout = ({cart}) => {
             }
         }
         generateToken()
-    }, []);
+    }, [cart]);
     const nextStep = () => setActiveStep( (prevActiveStep) => prevActiveStep + 1)
     const backStep = () => setActiveStep( (prevActiveStep) => prevActiveStep - 1)
     const next = (data) => {
