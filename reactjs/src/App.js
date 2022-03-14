@@ -42,20 +42,16 @@ const App =() =>{
 
 
   return (
-    <BrowserRouter> 
       <div className='app'>
         <Navbar totalItems={cart.total_items} /> 
-        <Routes>
-          <Route exact path='/' element={<Products/>} products={products} onAddToCart={handleAddToCart}/>
-          <Route exact path='/cart' element={<Cart/>}  
+          {/* <Products products={products} onAddToCart={handleAddToCart}/> */}
+          {/* <Cart
           cart={cart}
           handleRemoveFromCart={handleRemoveFromCart}
           handleUpdateCartQty={handleUpdateCartQty}
-          handleEmptyCart={handleEmptyCart}  />
-        <Route exact path='/checkout' element={<Checkout/>} />
-        </Routes>
+          handleEmptyCart={handleEmptyCart}  /> */}
+        <Checkout/>
       </div>
-    </BrowserRouter>
   );
 }
 
