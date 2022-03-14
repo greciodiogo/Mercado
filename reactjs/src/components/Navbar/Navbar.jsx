@@ -23,7 +23,6 @@ const Navbar = ({totalItems}) => {
                   </Badge>
                 </IconButton>
             </div> 
-
         </Toolbar>
       </AppBar>
     </>
