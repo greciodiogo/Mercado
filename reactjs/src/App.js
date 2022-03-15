@@ -50,7 +50,7 @@ const App =() =>{
           handleRemoveFromCart={handleRemoveFromCart}
           handleUpdateCartQty={handleUpdateCartQty}
           handleEmptyCart={handleEmptyCart}  /> */}
-        <Checkout/>
+        <Checkout cart={cart}/>
       </div>
   );
 }
